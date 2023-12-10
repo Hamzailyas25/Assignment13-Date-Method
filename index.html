@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+   var now = new Date ();
+
+   document.write("<h1>"+now+"</h1>","<br>","<br>","<br>") 
+
+
+   var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+   var now = new Date ();
+
+   var months = now.getMonth ();
+   var nameofmonth = month[months] 
+
+   document.write("<h1>"+"Current month: "+nameofmonth+"</h1>","<br>","<br>")
+
+     var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+     var now = new Date ();
+     var day = now.getDay ();
+     var nameday = dayNames[day]
+     document.write("<h1>"+"Today is "+nameday+"</h1>","<br>","<br>")
+
+
+    var now = new Date();
+    var dayofweek = now.getDay();
+
+if (dayofweek === 0 || dayofweek === 6) {
+    document.write("<h1>"+"It's Fun day!"+"</h1>","<br>","<br>");
+} 
+else document.write("<h1>"+"It's not a Fun day!"+"</h1>","<br>","<br>");
+
+
+
+var nows = new Date();
+    var dayofweeks = nows.getDate();
+    if (dayofweeks < 16) {
+        document.write("<h1>"+"First fifteen days of the month"+"</h1>","<br>","<br>")
+    }
+    else document.write("<h1>"+"Last days of the month"+"</h1>","<br>","<br>")
+
+
+
+
+    var nowed = new Date();
+
+    document.write("<h1>"+nowed+"</h1>")
+var milisecond = nowed.getTime();
+var miliseconds= milisecond / (1000)
+document.write("<h1>"+"Elapsed milisecond since midnight, Jan. 1, 1970:"+ miliseconds + "</h1>");
+
+var minutessincetime = nowed.getTime();
+var minutesSincegettime= minutessincetime / (1000 * 60 )
+
+document.write("<h1>"+"Elapsed minutes since midnight, Jan. 1, 1970:"+ minutesSincegettime +"</h1>","<br>","<br>");
+
+var nowss = new Date();
+    var dayofweekss = nowss.getHours();
+    if (dayofweekss < 12) {
+        document.write("<h1>"+"It's AM"+"</h1>","<br>","<br>")
+    }
+
+    else document.write("<h1>"+"It's PM"+"</h1>","<br>","<br>")
+
+
+    var laterDate = new Date(2020, 11, 31);
+
+document.write("<h1>"+"Later Date:" + laterDate + "</h1>","<br>","<br>");
+
+
+var monthss = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+var near = new Date ();
+var nearme = near.getMonth ();
+   var nameofmonths = monthss[nearme] 
+   var datess = near.getDate();
+
+
+   var hourss = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10, 11]
+   var hors = near.getHours ();
+   var hourme = hourss[hors]
+
+   var min = near.getMinutes ();
+    if (hors < 12){
+   document.write("<h1>",nameofmonths," ",datess, " ", hourme , ":" , min, " " , "AM","</h1>","<br>","<br>")}
+
+   else document.write("<h1>",nameofmonths," ",datess, " ", hourme , ":" , min, " " , "PM","</h1>","<br>","<br>")
+
+   var age = prompt ("Please enter the birth of year")
+
+   var year = new Date ();
+   var newyears = year.getFullYear ()
+   var agecal = newyears - age
+   document.write("<h1>","Your age is ",agecal,"</h1>")
+   document.write("<h1>", "Your birth year is ",age,"</h1>","<br>","<br>")
+
+
+    </script>
+</body>
+</html>
